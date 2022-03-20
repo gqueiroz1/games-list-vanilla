@@ -56,10 +56,6 @@
 }
 
 @media (max-width: 500px) {
-  .header h1 {
-    display: none;
-  }
-
   .header div {
     width: 100%;
     display: flex;

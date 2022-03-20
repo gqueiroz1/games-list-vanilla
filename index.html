@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/utils.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+  <script src="https://kit.fontawesome.com/484767c249.js" crossorigin="anonymous"></script>
+  <script src="js/api.js" type="module"></script>
+  <title>Games List</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>FreeGames</h1>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="container games-list">
+      <div class="games-list-header">
+        <h1 class="games-list-title">Games list</h1>
+        <div class="games-list-advanced-filter">
+          <div id="filter-platform" class="games-list-advanced-filter-box">
+            Platform: 
+            <span class="games-list-advanced-filter-selected">
+              <span class="selected-filter-text">All platforms</span> <i class="fa-solid fa-chevron-down"></i> 
+            </span>
+            <div class="games-list-advanced-filter-items">
+              <div name="pc" class="filter-item"><i class="fa-brands fa-windows"></i>Windows (PC)</div>
+              <div name="browser" class="filter-item"><i class="fa-brands fa-internet-explorer"></i>Browser (WEB)</div>
+              <div name="all" class="filter-item">All platforms</div>
+            </div>
+          </div>
+          <div id="filter-tag" class="games-list-advanced-filter-box">
+            Genre/Tag: 
+            <span class="games-list-advanced-filter-selected">
+              <span class="selected-filter-text">Strategy</span> <i class="fa-solid fa-chevron-down"></i> 
+            </span>
+            <div class="games-list-advanced-filter-items">
+              <div name="card" class="filter-item">Card games</div>
+              <div name="mmorpg" class="filter-item">MMORPG</div>
+              <div name="shooter" class="filter-item">Shooter</div>
+              <div name="strategy" class="filter-item">Strategy</div>
+              <div name="racing" class="filter-item">Racing</div>
+              <div name="sports" class="filter-item">Sports</div>
+              <div name="fighting" class="filter-item">Fighting</div>
+            </div>
+          </div>
+          <div id="filter-sortby" class="games-list-advanced-filter-box">
+            Sort by: 
+            <span class="games-list-advanced-filter-selected">
+              <span class="selected-filter-text">Relevance</span> <i class="fa-solid fa-chevron-down"></i> 
+            </span>
+            <div class="games-list-advanced-filter-items">
+              <div name="relevance" class="filter-item">Relevance</div>
+              <div name="popularity" class="filter-item">Popularity</div>
+              <div name="release-date" class="filter-item">Release date</div>
+              <div name="alphabetical" class="filter-item">Alphabetical</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="games-list-cards">
+        <template id="game-card">
+          <div class="game-card">
+            <div class="game-card-header">
+              <img class="game-card-header-image" src="https://www.freetogame.com/g/118/thumbnail.jpg" alt="Starbreak">
+              <span class="game-card-genre-tag tag">genre tag</span>
+            </div>
+            <div class="game-card-body">
+              <h2 class="game-card-title"></h2>
+              <p class="game-card-release-info"></p>
+              <p class="game-card-description"></p>
+              <span class="game-card-platform"></span>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <div class="games-list-pagination d-none">
+        <template id="pagination-itens-template">
+          <span class="pagination-element"></span>
+        </template>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

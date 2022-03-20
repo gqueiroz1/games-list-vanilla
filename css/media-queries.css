@@ -1,0 +1,59 @@
+@media (max-width: 1366px) {
+  .game-card {
+    flex-basis: calc(33% - 2rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .game-card {
+    flex-basis: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .game-card {
+    flex-basis: 100%;
+  }
+
+  .games-list-header {
+    flex-wrap: wrap;
+  }
+
+  .games-list-title {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .games-list-advanced-filter-box:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .games-list-advanced-filter-items {
+    min-width: 200px;
+    /* text-align: center; */
+  }
+
+  .games-list-advanced-filter-items {
+    top: 50px;
+  }
+
+  .games-list-advanced-filter-box:nth-of-type(3) .games-list-advanced-filter-items {
+    right: 0;
+    left: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  .header h1 {
+    display: none;
+  }
+
+  .header div {
+    width: 100%;
+    display: flex;
+  }
+
+  .header input {
+    flex-basis: 100%;
+  }
+}

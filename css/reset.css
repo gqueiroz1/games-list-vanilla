@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+}
+
+input, select {
+  padding: .5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+  color: #a2a2a2;
+  outline: none;
+}
+
+select {
+  color: #222;
+  background-color: transparent;
+  padding: .5rem 0;
+}

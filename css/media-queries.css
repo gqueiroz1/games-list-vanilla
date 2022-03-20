@@ -8,6 +8,18 @@
   .game-card {
     flex-basis: calc(50% - 1rem);
   }
+
+  .game-general-info {
+    flex-wrap: wrap;
+  }
+
+  .left-side-info {
+    width: 100%;
+  }
+
+  .right-side-info {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {

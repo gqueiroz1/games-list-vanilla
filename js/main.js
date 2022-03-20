@@ -38,8 +38,6 @@ function constructInitialFilters () {
     filterQuery = queryList
   }
 
-
-  
   queryList.forEach(item => {
     const key = item.split('=')[0]
     const value = item.split('=')[1]

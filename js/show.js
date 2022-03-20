@@ -10,7 +10,6 @@ fetchGame()
 
 async function fetchGame () {
   const game = await fetchSingle(gameId)
-  console.log(game)
   appendGameInfo(game)
 }
 
@@ -64,6 +63,4 @@ function loadGameTexts (game) {
   document.querySelector('span[name="ram"]').textContent = `${game.minimum_system_requirements.memory}`
   document.querySelector('span[name="storage"]').textContent = `${game.minimum_system_requirements.storage}`
   document.querySelector('.description').textContent = `${game.description}`
-
-
 }
